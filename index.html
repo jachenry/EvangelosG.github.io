@@ -5,12 +5,39 @@
 (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
 branch.init('key_live_ljfEuDIHnBZNygVpJZjMBdbgjpldpI5Q');
 branch.banner({
-    icon: 'http://icons.iconarchive.com/icons/wineass/ios7-redesign/512/Appstore-icon.png',
-    title: 'Blinker',
-    description: 'Get Blinker!',
-    openAppButtonText: 'Open',
-    downloadAppButtonText: 'Download'
-}, {});
+  icon: 'http://icons.iconarchive.com/icons/wineass/ios7-redesign/512/Appstore-icon.png',
+  title: 'Blinker',
+  description: 'Put the power to buy and sell cars in the palm of your hand.',
+  theme: 'light',
+  openAppButtonText: 'Open',
+  downloadAppButtonText: 'Download',
+  sendLinkText: 'Send Link',
+  phonePreviewText: '+1 555-1234',
+  showiOS: true,
+  showDesktop: false,
+  showAndroid: true,
+  iframe: false,
+  forgetHide: true,
+  customCSS: '#content {margin-top: 90px;} #branch-banner .content { height: 88px !important; } #branch-banner .vertically-align-middle { top: 42%; } #branch-banner .content .right { padding-top: 28px; } #branch-banner .icon img { border-radius: 5px; } #branch-banner .content .left { padding: 12px 6px; height: 75px; } #branch-banner .content .right { height: 75px; } #branch-banner .content .left .details .title { font-size: 18px; } #branch-banner .button { margin-left: 10px; }',
+}, {
+  feature: 'smart_banner',
+  stage: 'mobile_web',
+  data: {
+    '$always_deeplink': false,
+    '$deeplink_path': 'listing/656'
+  },
+});
+
+branch.sdk.deepview({
+  'channel': 'mobile_web',
+  'feature': 'deepview',
+  data: {
+    '$always_deeplink': false,
+    '$deeplink_path': 'listing/656'
+  },
+}, {
+  'open_app': false,
+});
 </script>
 </head>
 <body>
